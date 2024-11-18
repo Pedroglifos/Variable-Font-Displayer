@@ -474,7 +474,7 @@ export default function Component() {
         <div className="w-full lg:w-1/2">
           <section>
             <h3 className="text-xl font-semibold mb-4">Global Style</h3>
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div>
                 <Label htmlFor="slider-knob-roundness" className="text-sm font-medium">Knob Roundness</Label>
                 <Input
@@ -599,7 +599,7 @@ export default function Component() {
                   />
                 </div>
               </div>
-              <div className="col-span-3 flex space-x-4">
+              <div className="col-span-2 md:col-span-3 flex space-x-4">
                 <Button onClick={applyGlobalStyle} className="flex-1">Apply Style</Button>
                 <Button onClick={resetGlobalStyle} variant="outline" className="flex-1 flex items-center justify-center border border-white bg-transparent hover:bg-white/10">
                   <RotateCcw className="w-4 h-4 mr-2" />
@@ -608,7 +608,7 @@ export default function Component() {
               </div>
               <Dialog open={isPresetModalOpen} onOpenChange={setIsPresetModalOpen}>
                 <DialogTrigger asChild>
-                  <Button variant="outline" className="w-full mt-4 flex items-center justify-center border border-white bg-transparent hover:bg-white/10">
+                  <Button variant="outline" className="w-full col-span-2 md:col-span-3 mt-4 flex items-center justify-center border border-white bg-transparent hover:bg-white/10">
                     <Save className="w-4 h-4 mr-2" />
                     Save Preset
                   </Button>
