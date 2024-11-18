@@ -16,6 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Use external URLs for the favicon and related assets */}
+        <link rel="icon" href="https://freight.cargo.site/t/original/i/C1867687699294924053846570210642/logo_rev3x.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://freight.cargo.site/t/original/i/C1867687699294924053846570210642/logo_rev3x.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://freight.cargo.site/t/original/i/C1867687699294924053846570210642/logo_rev3x.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://freight.cargo.site/t/original/i/C1867687699294924053846570210642/logo_rev3x.png" />
+        <link rel="manifest" href="https://freight.cargo.site/t/original/i/C1867687699294924053846570210642/logo_rev3x.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
